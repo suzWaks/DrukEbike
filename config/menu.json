@@ -5,22 +5,11 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Blog",
-      "url": "/posts"
-    },
-    {
       "name": "Pages",
       "url": "",
       "hasChildren": true,
       "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
+
         {
           "name": "Terms & Conditions",
           "url": "/terms-policy"
@@ -28,9 +17,14 @@
       ]
     },
     {
+      "name": "About",
+      "url": "/about"
+    },
+    {
       "name": "Contact",
       "url": "/contact"
     }
+    
   ],
   "footer": [
     {
@@ -38,8 +32,8 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Contact",
+      "url": "/contact"
     },
     {
       "name": "Terms & Conditions",

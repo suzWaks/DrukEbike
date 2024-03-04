@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Druk Ebike",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "Ebike"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "The first electric bike rental service in Bhutan. Join hands to promote sustainable future",
+    "copyright": "Designed & Developed By CST Electrical Department"
+  },
+
+  "contact_info": {
+    "phone": "+975-17123456",
+    "email": "info@druk_ebike.bt",
+    "location": "CST, Phuentsholing, Chukha, BHUTAN"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Book Now",
+    "link": "/about"
+  },
+
+  "metadata": {
+    "meta_author": "CST",
+    "meta_image": "/images/ebike-social-card.jpg",
+    "meta_description": "Ebike booking platform"
+  },
+
+  "call_to_action": {
+    "enable": true,
+    "title": "5 E-bikes available currently",
+    "content": "Get your ride and enjoy before someone else does",
+    "button": {
+      "label": "Book Now",
+      "link": "/about"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "druk_ebike",
+    "settings": {}
+  }
+}

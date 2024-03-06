@@ -13,7 +13,7 @@ All rentals are charged on an hourly basis. The specific rental fee per hour is 
 #### 2. Payment:
 
 You must provide a valid credit or debit card to reserve your e-bike and for the final payment. We accept various payment methods, which will be clearly outlined on our website and during checkout.
-maintenance windows.
+
 
 #### 3. Rider Responsibility:
 

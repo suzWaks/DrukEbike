@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "name": "Blog",
+      "url": "/posts"
+    },
+    {
       "name": "Pages",
       "url": "",
       "hasChildren": true,

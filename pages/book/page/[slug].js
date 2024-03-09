@@ -8,6 +8,8 @@ import { gsap } from "@lib/gsap";
 import Post from "@partials/Post";
 import { useEffect, useRef } from "react";
 import Link from 'next/link'
+import React, { useState } from 'react';
+
 const { blog_folder } = config.settings;
 
 // blog pagination
@@ -36,6 +38,13 @@ const BlogPagination = ({
 
     return () => ctx.revert();
   }, []);
+
+
+  const [paymentMethod, setPaymentMethod] = useState('card');
+
+  const handlePaymentMethodChange = (event) => {
+    setPaymentMethod(event.target.value);
+  };
 
   return (
     <Base title={title}>
@@ -133,7 +142,9 @@ const BlogPagination = ({
                   <div class="md:col-span-2">
                     <div class="grid gap-6 sm:grid-cols-2">
                       <div class="flex items-center">
-                        <input type="radio" class="w-5 h-5 cursor-pointer" id="card" name="paymentMethod" checked />
+                        <input type="radio" class="w-5 h-5 cursor-pointer" id="card" name="paymentMethod" value="card"
+                          checked={paymentMethod === 'card'}
+                          onChange={handlePaymentMethodChange} />
                         <label for="card" class="ml-4 flex gap-2 cursor-pointer">
                           <img src="https://readymadeui.com/images/visa.webp" class="w-12" alt="card1" />
                           <img src="https://readymadeui.com/images/american-express.webp" class="w-12" alt="card2" />
@@ -141,23 +152,53 @@ const BlogPagination = ({
                         </label>
                       </div>
                       <div class="flex items-center">
-                        <input type="radio" class="w-5 h-5 cursor-pointer" id="mbob" name="paymentMethod" />
+                        <input type="radio" class="w-5 h-5 cursor-pointer" id="mbob" name="paymentMethod" value="mbob"
+                          checked={paymentMethod === 'mbob'}
+                          onChange={handlePaymentMethodChange} />
                         <label for="mbob" class="ml-4 flex gap-2 cursor-pointer">
                           <img src="https://thebhutanese.bt/wp-content/uploads/2020/11/86170542_4035856139774019_7366998609297932288_oS.jpg" class="w-20" alt="mbob" />
                           <img src="https://bnb.bt/wp-content/uploads/2023/02/MPay.svg" class="w-20" alt="mpay" />
                         </label>
                       </div>
                     </div>
-                    <div class="grid sm:grid-cols-4 gap-6 mt-6">
-                      <div class="col-span-2">
-                        <input type="number" placeholder="Card number"
-                          class="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none" />
+                    {paymentMethod === 'card' && (
+                      <div className="grid sm:grid-cols-4 gap-6 mt-6">
+                        <div className="col-span-2">
+                          <input
+                            type="number"
+                            placeholder="Card number"
+                            className="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                          />
+                        </div>
+                        <input
+                          type="number"
+                          placeholder="EXP."
+                          className="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                        />
+                        <input
+                          type="number"
+                          placeholder="CVV"
+                          className="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                        />
                       </div>
-                      <input type="number" placeholder="EXP."
-                        class="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none" />
-                      <input type="number" placeholder="CVV"
-                        class="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none" />
-                    </div>
+                    )}
+
+                    {paymentMethod === 'mbob' && (
+                      <div className="grid sm:grid-cols-4 gap-6 mt-6">
+                        <div className="col-span-2">
+                          <input
+                            type="number"
+                            placeholder="Account number"
+                            className="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                          />
+                        </div>
+                        <input
+                          type="number"
+                          placeholder="Phone No."
+                          className="px-4 py-3.5 bg-white text-[#333] w-full text-sm border-2 rounded-md focus:border-blue-500 outline-none"
+                        />
+                      </div>
+                    )}
                     <div class="flex items-center mt-10">
                       <input id="checkbox1" type="checkbox"
                         class="w-4 h-4 mr-3 focus:ring-1 focus:ring-offset-2 focus:ring-[#007bff]" />

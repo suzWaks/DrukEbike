@@ -5,7 +5,7 @@ banner:
   image: /images/ebike.png
   link:
     label: Book my ebike
-    href: "about"
+    href: "book"
 
 ##brands
 brands:
@@ -73,14 +73,14 @@ testimonial:
   list:
     - author: Tdee
       avatar: /images/user-img/01.jpg
-      profession: CEO, Nexuspay
+      profession: Media Councilor
       content: Great bikes and service. I would recommend everyone to avail the service and know the difference.
-    - author: David Cameron
+    - author: Tshering
       avatar: /images/user-img/02.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
+      profession: Business Man
+      content: Convenient way to explore the city, highly recommend! Saved us time and hassle.
+    - author: Wangchuk
       avatar: /images/user-img/03.jpg
       profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      content: Couldn't have asked for a better rental experience, e-bikes were a hit! Made our trip unforgettable.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Terms & condition
-description: "this is meta description"
+description: "Druk Ebike rules and regulations"
 draft: false
 ---
 

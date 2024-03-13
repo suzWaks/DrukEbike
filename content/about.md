@@ -10,7 +10,7 @@ about_us:
   content: Making E-bike Exploration Easy </br>
     We are a team of passionate individuals driven by a common goal to make eco-friendly transportation accessible and enjoyable for everyone. We believe that e-bikes offer a fantastic way to explore your surroundings, get some exercise, and reduce your carbon footprint. However, navigating traditional rental processes can be inconvenient and time-consuming. That's why we created this electric bicycle booking system, a platform designed to streamline your e-bike rental experience
 
-  image: /images/about/bikeHimalaya.jpg
+  image: /images/about/group.jpg
 
 ## our works
 works:
@@ -31,7 +31,7 @@ mission:
   content:
     Simplify e-bike rentals by providing a seamless online platform for booking, eliminating the need for phone calls or in-person visits. </br>
     Promote sustainable travel by encouraging eco-conscious choices by offering a convenient and enjoyable alternative to traditional transportation.
-  image: /images/about/02.jpg
+  image: /images/about/ebike.jpg
 
 ## members
 our_member:

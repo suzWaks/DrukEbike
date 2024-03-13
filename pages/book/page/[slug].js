@@ -216,21 +216,6 @@ const BlogPagination = ({
               </div>
             </div>
           </div>
-          <div
-            className="row justify-center pt-20 pb-16 opacity-0"
-            ref={postsRef}
-          >
-            {currentPosts.map((post, i) => (
-              <div key={`key-${i}`} className="mb-8 lg:col-5">
-                <Post post={post} authors={authors} />
-              </div>
-            ))}
-          </div>
-          <Pagination
-            section={blog_folder}
-            totalPages={totalPages}
-            currentPage={currentPage}
-          />
         </div>
       </section>
       {/* CTA */}
@@ -241,27 +226,7 @@ const BlogPagination = ({
 
 export default BlogPagination;
 
-// get blog pagination slug
-export const getStaticPaths = () => {
-  const getAllSlug = getSinglePage(`content/${blog_folder}`);
-  const allSlug = getAllSlug.map((item) => item.slug);
-  const { pagination } = config.settings;
-  const totalPages = Math.ceil(allSlug.length / pagination);
-  let paths = [];
 
-  for (let i = 1; i < totalPages; i++) {
-    paths.push({
-      params: {
-        slug: (i + 1).toString(),
-      },
-    });
-  }
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
 
 // get blog pagination content
 export const getStaticProps = async ({ params }) => {

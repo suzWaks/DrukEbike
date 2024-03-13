@@ -7,18 +7,6 @@ banner:
     label: Book my ebike
     href: "book"
 
-##brands
-brands:
-  - /images/brands/01-colored.png
-  - /images/brands/02-colored.png
-  - /images/brands/03-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
-
 #features
 features:
   sub_title: KNOW OUR UNIQUENESS
@@ -51,19 +39,6 @@ intro:
   description: Ride an ebike  at affordable rates, without worrying about maintenance or high costs. Just pay as you go!
   thumbnail: "/images/video-popup.jpg"
   video_id: dyZcRRWiuuw
-
-#speciality
-speciality:
-  primary:
-    title: You Will Not Miss Your All Misunderstandings
-    subtitle: PRIMARY SPECIALITY
-    description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
-    image: /images/features-01.png
-  secondary:
-    title: Say Hello To No-Code The Advance Creation
-    subtitle: SECONDARY SPECIALITY
-    description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
-    image: /images/features-02.png
 
 #Testimonial
 testimonial:

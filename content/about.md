@@ -39,13 +39,16 @@ our_member:
   title: The People Behind
   content: We are a group of undergraduate individuals pursing B.E in Electrical Engineering. This project is being carried out as a final year project.
   list:
-    - name: Valentin Staykov
-      field: Operations
-      image: /images/about/team/01.jpg
-    - name: Bukiakta Bansalo
-      field: Product
-      image: /images/about/team/02.jpg
-    - name: Ortrin Okaster
-      field: Engineering
-      image: /images/about/team/03.jpg
+    - name: Tsheten Dendup
+      field:
+      image: /images/about/team/TshetenDendup.jpg
+    - name: Damcho Wangchuk
+      field:
+      image: /images/about/team/DamchoWangchuk.jpg
+    - name: Pema Kuenchap
+      field:
+      image: /images/about/team/PemaKuenchap.jpg
+    - name: Kezang Namgay
+      field:
+      image: /images/about/team/KezangNamgay.jpg
 ---

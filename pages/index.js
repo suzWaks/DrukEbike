@@ -13,7 +13,7 @@ import { TbQuote } from "react-icons/tb";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
+const Home = ({ banner, features, intro, testimonial }) => {
   const paginationRef = useRef(null);
   const testimonialPaginationRef = useRef(null);
 
@@ -317,52 +317,6 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
         </div>
       </section>
 
-      {/* Special Features */}
-      {/* <section className="section">
-        <div className="container">
-          <div className="row items-center justify-center">
-            <div className="animate lg:col-6 lg:order-2">
-              <ImageFallback
-                className="mx-auto"
-                src={speciality.primary.image}
-                width={575}
-                height={511}
-                alt="primary speciality"
-              />
-            </div>
-            <div className="animate lg:col-5 lg:order-1">
-              <p>{speciality.primary.subtitle}</p>
-              {markdownify(
-                speciality.primary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )}
-              {markdownify(speciality.primary.description, "p", "mt-10")}
-            </div>
-          </div>
-          <div className="row items-center">
-            <div className="animate lg:col-6">
-              <ImageFallback
-                className="mx-auto"
-                src={speciality.secondary.image}
-                width={575}
-                height={511}
-                alt="secondary speciality"
-              />
-            </div>
-            <div className="animate lg:col-5">
-              <p>{speciality.secondary.subtitle}</p>
-              {markdownify(
-                speciality.secondary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )}
-              {markdownify(speciality.secondary.description, "p", "mt-10")}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Testimonial */}
       <section className="section pt-0">
         <div className="container">
@@ -461,16 +415,14 @@ export default Home;
 export const getStaticProps = async () => {
   const homepage = await getListPage("content/_index.md");
   const { frontmatter } = homepage;
-  const { banner, brands, features, intro, speciality, testimonial } =
+  const { banner, features, intro, testimonial } =
     frontmatter;
 
   return {
     props: {
       banner: banner,
-      brands: brands,
       features: features,
       intro: intro,
-      speciality: speciality,
       testimonial: testimonial,
     },
   };

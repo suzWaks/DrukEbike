@@ -36,10 +36,10 @@ const Contact = ({ data }) => {
     }
 
     emailjs.send(
-      'service_fw310d8',
-      'template_6qepktn',
+      'service_ujvxzxf',
+      'template_6k5ht48',
       templateParams, {
-      publicKey: 'Nm3wsOoHhMxRGTOAT'
+      publicKey: 'vPFh6ZIRKRkAtWoXA'
     }).then(
       (response) => {
         console.log('SUCCESS!', response.status, response.text);

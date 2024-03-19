@@ -157,6 +157,17 @@ const About = ({ data }) => {
           </div>
           <div className="row justify-center">
             <div className="lg:col-10">
+              <img
+                className="mx-auto mt-8 rounded-full shadow-[10px_10px_0] shadow-primary/10"
+                src="/images/about/GuideManojSharma.jpg"
+                width={245}
+                height={245}
+                alt="Placeholder"
+              />
+              <div className="text-center">
+                <h4 className="mt-8">Manoj Sharma</h4>
+                <p className="mt-3">Project Guide</p>
+              </div>
               <div className="row">
                 {our_member.list.map((member, index) => (
                   <div
@@ -178,6 +189,7 @@ const About = ({ data }) => {
             </div>
           </div>
         </div>
+
       </section>
       <Cta />
     </>
